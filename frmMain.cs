@@ -108,5 +108,7 @@ namespace Lab4
                 fDoiMatKhkau.Show();
             }
         }
+
+ 
     }
 }
