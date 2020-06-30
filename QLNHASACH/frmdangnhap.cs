@@ -12,10 +12,11 @@ namespace QLNHASACH
 {
     public partial class frmdangnhap : Form
     {
-
+        frmmain fMain = null;
         XLNHANVIEN tblNhanVien;
-        public frmdangnhap()
+        public frmdangnhap(frmmain pf)
         {
+            fMain = pf;
             InitializeComponent();
         }
 
@@ -27,18 +28,19 @@ namespace QLNHASACH
         private void btndangnhap_Click(object sender, EventArgs e)
         {
             tblNhanVien = new XLNHANVIEN();
-            var r = tblNhanVien.Select("Username='" + txbdn.Text + "' and Password='" + txbmk.Text + "'");
-            if(r.Count()>0)
+            DataRow[] r = tblNhanVien.Select("Username='" + txbdn.Text + "' and Password = '" + txbmk.Text + "'");
+            if (r.Count() > 0)
             {
-                frmmain f = (frmmain)this.Parent;
-                f.Text = "Quản Lý Nhà Sách - Chào" + r[0]["TenNV"].ToString();
-                f.maNV = r[0]["MaNV"].ToString();
-                f.enableControl((int)r[0]["MaLTK"]);
+                
+            
+                fMain.Text = "Quản Lý Nhà Sách - Chào " + r[0]["TenNV"].ToString();
+                fMain.maNV = r[0]["MaNV"].ToString();
+                fMain.enableControl((int)r[0]["MaLTK"]);
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!!!");
+                MessageBox.Show("Sai Tên tài khoản hoặc mật khẩu!!!");
             }
         }
 

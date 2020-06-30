@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmchamcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchamcong.Designer.cs">
+      <DependentUpon>frmchamcong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmdangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmchamcong.resx">
+      <DependentUpon>frmchamcong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmdangnhap.resx">
       <DependentUpon>frmdangnhap.cs</DependentUpon>
     </EmbeddedResource>

@@ -66,12 +66,13 @@
             // 
             this.txbmk.Location = new System.Drawing.Point(147, 69);
             this.txbmk.Name = "txbmk";
+            this.txbmk.PasswordChar = '*';
             this.txbmk.Size = new System.Drawing.Size(136, 20);
             this.txbmk.TabIndex = 3;
             // 
             // btndangnhap
             // 
-            this.btndangnhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btndangnhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btndangnhap.ImageOptions.Image")));
             this.btndangnhap.Location = new System.Drawing.Point(46, 127);
             this.btndangnhap.Name = "btndangnhap";
             this.btndangnhap.Size = new System.Drawing.Size(104, 39);
@@ -81,7 +82,7 @@
             // 
             // btnthoat
             // 
-            this.btnthoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnthoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.ImageOptions.Image")));
             this.btnthoat.Location = new System.Drawing.Point(179, 127);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(104, 39);
@@ -91,6 +92,7 @@
             // 
             // frmdangnhap
             // 
+            this.AcceptButton = this.btndangnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 195);

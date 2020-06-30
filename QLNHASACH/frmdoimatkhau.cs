@@ -24,7 +24,10 @@ namespace QLNHASACH
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            this.Close();
+            TabPage p = (TabPage)this.Parent;
+            TabControl tabMain = (TabControl)p.Parent;
+            tabMain.TabPages.Remove(p);
+            
         }
 
         private void btncapnhat_Click(object sender, EventArgs e)

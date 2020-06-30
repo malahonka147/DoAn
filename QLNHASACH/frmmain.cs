@@ -18,12 +18,14 @@ namespace QLNHASACH
         }
         private void frmmain_Load(object sender, EventArgs e)
         {
+           
+
+
             enableControl(-1);
-            frmdangnhap f = new frmdangnhap();
-            f.MdiParent = this;
+            frmdangnhap f = new frmdangnhap(this);
             f.StartPosition = FormStartPosition.CenterScreen;
-            f.Show();
             f.WindowState = FormWindowState.Normal;
+            f.ShowDialog();
 
         }
         public string maNV;
@@ -45,6 +47,7 @@ namespace QLNHASACH
                         btnSanPham.Enabled = true;
                         btnTaoHoaDon.Enabled = true;
                         btnThongKe.Enabled = true;
+                        btnChamCong.Enabled = true;
                         break;
                     }
                 case 2:// nhanvien ban hang
@@ -59,6 +62,7 @@ namespace QLNHASACH
                         btnSanPham.Enabled = false;
                         btnTaoHoaDon.Enabled = true;
                         btnThongKe.Enabled = false;
+                        btnChamCong.Enabled = false;
                         break;
                     }
                 case 3:// nhanvien quanly kho
@@ -73,6 +77,7 @@ namespace QLNHASACH
                         btnSanPham.Enabled = true;
                         btnTaoHoaDon.Enabled = false;
                         btnThongKe.Enabled = false;
+                        btnChamCong.Enabled = false;
                         break;
                     }
                 default:
@@ -87,6 +92,7 @@ namespace QLNHASACH
                         btnSanPham.Enabled = true;
                         btnTaoHoaDon.Enabled = false;
                         btnThongKe.Enabled = false;
+                        btnChamCong.Enabled = false; 
                         break;
                     }
                     
@@ -98,10 +104,9 @@ namespace QLNHASACH
 
         private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            foreach(Form f in MdiChildren)
+            foreach(Form f in this.MdiChildren)
             {
                 f.Close();
-
             }
             frmmain_Load(sender, e);
 
@@ -109,19 +114,38 @@ namespace QLNHASACH
 
         private void btnDoiMK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(fdoimatkhau==null)
+            int index = tabControlMain.TabPages.IndexOfKey("tabPageDoiMatKhau");
+            if(index >=0)
             {
-                fdoimatkhau = new frmdoimatkhau();
-                fdoimatkhau.MdiParent = this;
-                fdoimatkhau.WindowState = FormWindowState.Maximized;
-                fdoimatkhau.Show();
+                tabControlMain.SelectedIndex = index;
+                
             }
             else
             {
-                fdoimatkhau.Activate();
-                fdoimatkhau.Show();
+                frmdoimatkhau f = new frmdoimatkhau();
+                TabPage p = new TabPage(f.Text);
+                p.Name = "tabPageDoiMatKhau";
+                f.TopLevel = false;
+                p.Controls.Add(f);
+                f.Dock = DockStyle.Fill;
+                f.FormBorderStyle = FormBorderStyle.None;
+                tabControlMain.TabPages.Add(p);
+                f.Show();
             }
             
+        }
+
+        private void btnChamCong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmchamcong f = new frmchamcong();
+            TabPage p = new TabPage(f.Text);
+            p.Name = "tabChamCong";
+            f.TopLevel = false;
+            p.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.FormBorderStyle = FormBorderStyle.None;
+            tabControlMain.TabPages.Add(p);
+            f.Show();
         }
     }
 }
