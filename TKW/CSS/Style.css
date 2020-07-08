@@ -1,0 +1,166 @@
+@charset "utf-8";
+nav{
+		clear:both;
+		background-color:#00F;
+		height:45px;}
+nav div#menu{
+		width:100%;
+		margin:0px auto;}
+
+nav div#menu a{
+	float:right;
+	list-style:none;
+	margin-lright:50px;
+	color:#FFF;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+	padding:11px 15px;
+}
+nav div#menu a:hover{
+	border-bottom:5px solid#206ab5;
+}
+div#body{
+		width:100%;
+		margin:0px auto;
+		background-color:#FFF;
+	}
+	article{
+		display:table-row;
+	}
+	aside#left,aside#right,section{
+		display:table-cell;
+		vertical-align:top;
+	}
+	aside#left{
+		width:15%;
+	}
+	section{
+		width:70%;
+	}
+	aside#right{
+		width:15%;
+	}
+	aside#left>div{
+		background-color:#39F;
+		font-size:20px;
+	}
+	aside#left>div
+	{
+		color:#C00
+		height: 40%;
+	}
+	aside#left>div#timkiem
+	{
+		background-color:#C36;
+		border-color:#06F;
+		border:10px;
+		text-align:center;
+		font-size:14px;
+		font-weight:bold;
+		color:white;
+		height:20%;
+	}
+	aside#left>div#timkiem>input
+	{
+		margin-top:10px;
+		margin-bottom:10px;
+		height:25px;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+	}
+	aside#left>div#button
+	{
+		height:100%
+		background-color:#39F;
+		
+	}
+	aside#left>div#button>img
+	{
+		padding: 15px;
+		height:40%
+	}
+
+	section>div#right
+	{
+		border:1px solid#009;
+	}
+	section>div>p
+	{
+		margin:0px auto;
+		height:20px;
+		text-align:center;
+		background-color:#009;
+		color:white;
+		
+	}
+	section>div#left>p#txt
+	{
+		background-color:#FFF;
+		color:blue;
+		font-weight:bold;
+	}
+	section>div#thongbao
+	{
+		font-size:20px;
+		float:none;
+		color:blue;
+		
+	}
+	section>div#thongbao>p
+	{
+		background-color:#009;
+		margin:0px auto;
+		color:white;
+	}
+	footer{
+	background-color: #333;
+	padding-top: 10px;
+	}
+	footer>p{
+		text-align: center;
+		font-size: 17px;
+		margin-top: 5px;
+	}
+	aside#right>div>p#title
+	{
+		margin-top:0px;
+		background-color:#009;
+		text-align:center;
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		height:25px;
+
+	}
+	aside#right>div
+	{
+		border:1px solid#009;
+		height:250px;;
+	}
+	aside#right>div>p
+	{
+		color:blue;
+	}
+	aside#right>div>p.lctt{
+		color:red;
+	}
+	section>div#templates
+	{
+		width:70%;	
+	}
+	.lh{
+		background-color:#009;
+		color:white;
+	}
+	aside#left>div a
+	{
+		color:red;
+		text-decoration:none;
+	}
+	aside#left>div a:hover
+	{
+		border-bottom:2px solid #F00;
+	}

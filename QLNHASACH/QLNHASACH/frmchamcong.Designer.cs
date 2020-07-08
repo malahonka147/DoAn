@@ -44,8 +44,8 @@
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayChamCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoGio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Xoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sửa = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Xóa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSoGio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTChamCong)).BeginInit();
@@ -114,7 +114,8 @@
             // 
             // dtNgay
             // 
-            this.dtNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtNgay.Location = new System.Drawing.Point(161, 25);
             this.dtNgay.Name = "dtNgay";
             this.dtNgay.Size = new System.Drawing.Size(142, 20);
@@ -156,8 +157,8 @@
             this.TenNV,
             this.NgayChamCong,
             this.SoGio,
-            this.Sua,
-            this.Xoa});
+            this.Sửa,
+            this.Xóa});
             this.dgvCTChamCong.Location = new System.Drawing.Point(36, 270);
             this.dgvCTChamCong.Name = "dgvCTChamCong";
             this.dgvCTChamCong.Size = new System.Drawing.Size(645, 120);
@@ -193,19 +194,27 @@
             this.SoGio.Name = "SoGio";
             this.SoGio.ReadOnly = true;
             // 
-            // Sua
+            // Sửa
             // 
-            this.Sua.DataPropertyName = "Sua";
-            this.Sua.HeaderText = "Sửa";
-            this.Sua.Name = "Sua";
-            this.Sua.ReadOnly = true;
+            this.Sửa.DataPropertyName = "Sua";
+            this.Sửa.HeaderText = "Sửa";
+            this.Sửa.Name = "Sửa";
+            this.Sửa.ReadOnly = true;
+            this.Sửa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Sửa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Sửa.Text = "Sửa";
+            this.Sửa.UseColumnTextForButtonValue = true;
             // 
-            // Xoa
+            // Xóa
             // 
-            this.Xoa.DataPropertyName = "Xoa";
-            this.Xoa.HeaderText = "Xóa";
-            this.Xoa.Name = "Xoa";
-            this.Xoa.ReadOnly = true;
+            this.Xóa.DataPropertyName = "Xoa";
+            this.Xóa.HeaderText = "Xóa";
+            this.Xóa.Name = "Xóa";
+            this.Xóa.ReadOnly = true;
+            this.Xóa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Xóa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Xóa.Text = "Xóa";
+            this.Xóa.UseColumnTextForButtonValue = true;
             // 
             // frmchamcong
             // 
@@ -244,7 +253,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayChamCong;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoGio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sua;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Xoa;
+        private System.Windows.Forms.DataGridViewButtonColumn Sửa;
+        private System.Windows.Forms.DataGridViewButtonColumn Xóa;
     }
 }

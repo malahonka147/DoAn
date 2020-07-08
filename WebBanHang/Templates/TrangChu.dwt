@@ -1,0 +1,127 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+<html>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<head>
+	<meta charset="utf-8">
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Nhà sách ABC</title>
+	<!-- TemplateEndEditable -->
+</head>
+<body>
+<header>
+		<div id="logo">
+			<img src="Images\Welcome.jpg">
+		</div>
+		<div id="dn">
+			<img src="Images\LOGIN.png" width="20">
+			<a href="Dangnhap.html">Đăng Nhập</a> | <a href="Dangky.html">Đăng kí</a>
+			<img src="Images\GioHang.jpg" width="20"><a href="#">Giỏ Hàng(Trống)</a>
+		</div>
+	</header>
+	<nav>
+    	<div id="subnav">
+            <ul type="square">
+                <li><a href="TrangChu.html"><b>TRANG CHỦ</b></a></li>
+                <li><a href="GioiThieu.html"><b>GIỚI THIỆU</b></a></li>
+                <li><a href="#"><b>LIÊN HỆ</b></a></li>
+            </ul>
+       </div>
+                <input type="text" size="36" name="tsearch" placeholder="Hãy nhập tên sách cần tìm...">
+                <input type="submit" value="Tìm sách" title="Tìm Sách">
+            </div>
+       </div>
+	</nav>
+	<!-- TemplateBeginEditable name="EditRegion3" -->
+	<div id="body">
+	  <article>
+	    <aside id="left">
+	      <div>
+	        <p>SÁCH THEO CHỦ ĐỀ</p>
+	        <ul type="square">
+	          <li><a href="#">Ngoại ngữ</a></li>
+	          <li><a href="#">Công nghệ thông tin</a></li>
+	          <li><a href="#">Luật</a></li>
+	          <li><a href="#">Văn học</a></li>
+	          <li><a href="#">Khoa học kỹ thuật</a></li>
+	          <li><a href="#">Nông nghiệp</a></li>
+	          <li><a href="#">Lịch sử</a></li>
+	          <li><a href="#">Kinh tế</a></li>
+	          <li><a href="#">Nghệ thuật sống</a></li>
+            </ul>
+          </div>
+	      <div>
+	        <p>SÁCH THEO NHÀ SẢN XUẤT</p>
+	        <ul type="square">
+	          <li><a href="#">Nhà xuất bản trẻ</a></li>
+	          <li><a href="#">NXB Thống kê</a></li>
+	          <li><a href="#">Kim Đồng</a></li>
+	          <li><a href="#">Đại học quốc gia</a></li>
+	          <li><a href="#">Văn hóa nghệ thuật</a></li>
+	          <li><a href="#">Văn hóa</a></li>
+	          <li><a href="#">Lao động - Xã hội</a></li>
+	          <li><a href="#">Khoa học&Kỹ thuật</a></li>
+            </ul>
+          </div>
+        </aside>
+	    <section>
+	      <p>Sách Mới</p>
+	      <div class="sach">
+	        <p class="tensach"><a href="file:///D|/Downloads/TKW/BTH/Chitiesanpham.html">Giáo trình Tin học cơ bản</a></p>
+	        <img class ="hinhsach" src="file:///D|/Downloads/TKW/BTH/THCB.jpg">
+	        <p class="dongia">Đơn giá:<span class="gia"> 26,000 VNĐ</span></p>
+	        <img src="file:///D|/Downloads/TKW/BTH/MuaNgay.jpg" class ='nutchonmua'></div>
+	      <div class="sach">
+	        <p class="tensach"><a href="file:///D|/Downloads/TKW/BTH/Chitiesanpham.html">Giáo trình Tin học </a></p>
+	        <img class ="hinhsach" src="file:///D|/Downloads/TKW/BTH/THCB.jpg">
+	        <p class="dongia">Đơn giá:<span class="gia"> 26,000 VNĐ</span></p>
+	        <img src="file:///D|/Downloads/TKW/BTH/MuaNgay.jpg"  class ='nutchonmua'></div>
+	      <div class="sach">
+	        <p class="tensach"><a href="file:///D|/Downloads/TKW/BTH/Chitiesanpham.html">Giáo trình Tin học Phổ thông</a></p>
+	        <img class ="hinhsach" src="file:///D|/Downloads/TKW/BTH/THCB.jpg">
+	        <p class="dongia">Đơn giá:<span class="gia"> 26,000 VNĐ</span></p>
+	        <img src="file:///D|/Downloads/TKW/BTH/MuaNgay.jpg" width="115" height="45" class ='nutchonmua'></div>
+	      <div class="sach">
+	        <p class="tensach"><a href="file:///D|/Downloads/TKW/BTH/Chitiesanpham.html">Giáo trình Tin học cao cấp</a></p>
+	        <img class ="hinhsach" src="file:///D|/Downloads/TKW/BTH/THCB.jpg">
+	        <p class="dongia">Đơn giá:<span class="gia"> 26,000 VNĐ</span></p>
+	        <img src="file:///D|/Downloads/TKW/BTH/MuaNgay.jpg" class ='nutchonmua'></div>
+	      <div class="sach">
+	        <p class="tensach"><a href="file:///D|/Downloads/TKW/BTH/Chitiesanpham.html">Giáo trình Tin học Siêu cấp</a></p>
+	        <img class ="hinhsach" src="file:///D|/Downloads/TKW/BTH/THCB.jpg">
+	        <p class="dongia">Đơn giá:<span class="gia"> 26,000 VNĐ</span></p>
+	        <img src="file:///D|/Downloads/TKW/BTH/MuaNgay.jpg" class ='nutchonmua'></div>
+        </section>
+	    <aside id="right">
+	      <div id="sachbannhieu">
+	        <p>SÁCH BÁN NHIỀU</p>
+	        <marquee direction="up" scrollamount="3" scrolldelay="100" onMouseMove="stop()" onMouseOut="start()">
+	          <p><a href="#"><img src="file:///D|/Downloads/TKW/BTH/THLTVB.jpg" width="200">Thủ Thuật Lập Trình Visual Bassic 8</a></p>
+	          <p><a href="#"><img src="file:///D|/Downloads/TKW/BTH/HDTHPTS.jpg" width="200">Hướng Dẫn Tự Học Photoshop CS (Photoshop 6.0)</a></p>
+	          <p><a href="#"><img src="file:///D|/Downloads/TKW/BTH/CBVPTS.jpg" width="200">Căn Bản Về Photoshop CS Tinh Chỉnh Và Xử Lý Màu</a></p>
+	          <p><a href="#"><img src="file:///D|/Downloads/TKW/BTH/THCB.jpg" width="200">Tin Học Cơ Bản</a></p>
+            </marquee>
+          </div>
+	      <div id="lienketwebsite">
+	        <p>LIÊN KẾT WEBSITE</p>
+	        <select name="select" onChange="window.open(this.option[this.selectedIndex].value,'_black')">
+	          <option selected>---Chọn trang liên kết---</option>
+	          <option value="https://tdmu.edu.vn/">ĐH Thủ Dầu Một</option>
+	          <option value="https://iteee.tdmu.edu.vn/">ĐKhoa KT-CN</option>
+            </select>
+          </div>
+	      <div id="thongketruycap">
+	        <p>THỐNG KÊ TRUY CẬP</p>
+          </div>
+        </aside>
+      </article>
+    </div>
+	<!-- TemplateEndEditable -->
+	<footer>
+	  <p>2016 - Nhà sách ABC. Allright Reserved</p>
+		<p>Website được pháy triển để sử dụng làm bài tập thục hanh môn Thiết kế và Lập trình Web.</p>
+		<p>Email: abc.thudaumotuniversity@gmail.com</p>
+</footer>
+</body>
+</html>

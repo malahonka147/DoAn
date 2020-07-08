@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="../CSS/Style.css"/>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<titleTrang Chủ</title>
+</head>
+<body>
+	
+	<nav>
+    	<div id="menu">
+        <a href="../LienHe.html">LIÊN HỆ</a>
+        <a href="#">SITE MAP</a>
+        <a href="#">TUYỂN SINH</a>
+        <a href="../TrangChu.html">TRANG CHỦ</a>
+  	  </div>
+       </div>
+	</nav>
+	<div id="body">
+		<article>
+			<aside id="left">
+         		<div>
+						<img src="Images/list.png" /><a href="#"> Giới Thiệu Chung</a><br />
+                        <img src="Images/list.png" /><a href="#">Tra Cứu Thông Tin</a><br />
+                        <img src="Images/list.png" /><a href="#">Tin Tức - Sự Kiện</a><br />
+                        <img src="Images/list.png" /><a href="#">Đào Tạo - Bồi Dưỡng</a><br />
+                        <img src="Images/list.png" /><a href="#">Nghiên Cứu Khoa Học</a><br />
+                        <img src="Images/list.png" /><a href="#">Website Thành Viên</a><br />
+                </div>
+                <div id="timkiem">
+                 
+                        <input type="text" size="20"  name="tsearch" placeholder="Hãy nhập tên sách cần tìm...">
+                        <br><input type="submit" value="Tìm sách" title="Tìm Sách">
+              </div>
+              <div id="button">
+             	<img src="Images/dkhp.gif" width="240"/>
+                <img src="Images/sotaysv.gif"width="240" />
+                <img src="Images/thuvienanh.gif"width="240" />
+               </div>
+			</aside>
+			<!-- TemplateBeginEditable name="EditRegion2" -->
+            <section>
+              <div id="templates">
+              </div>
+            </section>
+			<!-- TemplateEndEditable -->
+			<aside id="right">
+            	<div>
+                	<p id="title">THÔNG BÁO</p>
+                    <p>Hướng dẫn xét thi đua khen thưởng năm 2018-2019</p>
+                    <p>Thông báo vv tín chỉ A,B tin học ngày 20/4/2019</p>
+                    <p>Thông báo lịch nghỉ hè</p>
+                    
+                </div>
+                <div >
+                	 <p id="title">LỊCH CÔNG TÁC TUẦN</p>
+                    <p class="lctt">Hướng dẫn xét thi đua khen thưởng năm 2018-2019</p>     
+              </div>
+			</aside>
+           
+		</article>
+    </div>
+     <footer>
+                <p>2016 - Nhà sách ABC. Allright Reserved</p>
+                <p>Website được pháy triển để sử dụng làm bài tập thục hanh môn Thiết kế và Lập trình Web.</p>
+                <p>Email: abc.thudaumotuniversity@gmail.com</p>
+            </footer>
+</body>
+</html>
